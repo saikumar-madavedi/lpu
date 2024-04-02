@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "EMS",
+  title: "LPU Events",
   description: "Event Management System",
   icons: {
     icon: '/assets/images/logo.svg'
