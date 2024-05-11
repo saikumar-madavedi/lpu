@@ -1,11 +1,17 @@
 import CategoryFilter from '@/components/shared/CategoryFilter';
 import Collection from '@/components/shared/Collection'
 import Search from '@/components/shared/Search';
+import Experience from '@/components/shared/Experience';
+import Newsletter from '@/components/shared/Newsletter';
+
 import { Button } from '@/components/ui/button'
 import { getAllEvents } from '@/lib/actions/event.actions';
 import { SearchParamProps } from '@/types';
 import Image from 'next/image'
 import Link from 'next/link'
+
+
+
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const page = Number(searchParams?.page) || 1;
@@ -61,6 +67,18 @@ export default async function Home({ searchParams }: SearchParamProps) {
           totalPages={events?.totalPages}
         />
       </section>
+
+      {/* <h2 className='h2-bold pl-80'>Experience</h2> <br/> */}
+
+      {/* <section>
+        <Experience />
+      </section> */}
+
+
+      <section>
+        <Newsletter />
+      </section>
+      
     </>
   )
 }
